@@ -1,3 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
 <h1>
-    Homepage - {{ controller_name }}
+    <title>{% block title %}{{ parent() }} - Homepage{% endblock %}</title>
+    Homepage.
+
 </h1>
+
+{% endblock %}
