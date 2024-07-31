@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{%  block title %}{% endblock %}
+
+{% block body %}
+    <h1>Projects</h1>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <a href="{{ path('project_show', {id: project.id}) }}">{{ project.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
