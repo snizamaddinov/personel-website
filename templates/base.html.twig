@@ -8,9 +8,11 @@
         {% endblock %}
 
         {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
     <body>
+        <img src="{{ asset('images/profile_image.jpeg') }}" alt="Profile Photo" width="600" height="600">
         {% block body %}
 
         {% endblock %}
